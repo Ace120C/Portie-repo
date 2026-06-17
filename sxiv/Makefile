@@ -19,3 +19,4 @@ fetch:
 install:
 	mkdir -p src
 	tar -xf ${DISTNAME}-${GH_COMMIT}.tar.gz -C src --strip-components=1
+	cd src && make install clean
